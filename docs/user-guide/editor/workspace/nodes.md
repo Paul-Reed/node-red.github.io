@@ -1,6 +1,12 @@
 ---
-layout: docs
-toc: editor-guide-toc.html
+layout: docs-editor-guide
+slug:
+  - url: /docs/user-guide/editor
+    label: editor
+  - url: "/docs/user-guide/editor/workspace"
+    label: "workspace"
+  - nodes
+toc: toc-editor-guide.html
 title: Nodes
 ---
 
@@ -32,7 +38,7 @@ currently connected or not.
 </div>
 
 If a node has any undeployed changes, it displays a blue circle above it. If there
-are are errors with its configuration, it displays a red triangle.
+are errors with its configuration, it displays a red triangle.
 
 Some nodes include a button on either its left or right edge. These allow some
 interaction with the node from within the editor. The Inject and Debug nodes
@@ -117,4 +123,4 @@ It also provides a select box to set the scope of the config node. The scope
 determines which flows the config node is available on. By default it is available
 on all flows, but the select box can be used to make it local to just one flow.
 
-The [Configuration Nodes Sidebar](sidebar/config) can be used to manage all config nodes.
+The [Configuration Nodes Sidebar](/docs/user-guide/editor/sidebar/config) can be used to manage all config nodes.

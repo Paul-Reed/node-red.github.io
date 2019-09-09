@@ -1,6 +1,6 @@
 ---
-layout: docs
-toc: creating-nodes-toc.html
+layout: docs-creating-nodes
+toc: toc-creating-nodes.html
 title: Creating Nodes
 ---
 
@@ -17,6 +17,7 @@ The following sections exist and are largely complete:
  - [Node status](status)
  - [Configuration nodes](config-nodes)
  - [Help style guide](help-style-guide)
+ - [Adding examples](examples)
  - [Packaging](packaging)
  - [Internationalisation](i18n)
 

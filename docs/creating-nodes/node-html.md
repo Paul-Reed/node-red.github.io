@@ -1,7 +1,8 @@
 ---
-layout: docs
-toc: creating-nodes-toc.html
+layout: docs-creating-nodes
+toc: toc-creating-nodes.html
 title: HTML File
+slug: .html
 ---
 
 The node `.html` file defines the how the node appears with the editor. It
@@ -66,6 +67,7 @@ editor. It is an object with the following properties:
 - `outputLabels`: (string\|function) optional [labels](appearance#port-labels) to add on hover to the output ports of a node.
 - `icon`: (string) the [icon](appearance#icon) to use.
 - `align`: (string) the [alignment](appearance#alignment) of the icon and label.
+- `button`: (object) adds a [button](appearance#buttons) to the edge of the node.
 - `oneditprepare`: (function) called when the edit dialog is being built. See [custom edit behaviour](properties#custom-edit-behaviour).
 - `oneditsave`: (function) called when the edit dialog is okayed. See [custom edit behaviour](properties#custom-edit-behaviour).
 - `oneditcancel`: (function) called when the edit dialog is cancelled. See [custom edit behaviour](properties#custom-edit-behaviour).

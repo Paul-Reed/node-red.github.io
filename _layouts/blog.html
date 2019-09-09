@@ -1,9 +1,11 @@
 {% include header.html %}
+{% assign top_url = '/blog' %}
+{% assign top_slug = 'blog' %}
 {% assign author = site.authors[page.author] %}
 <div class="docs">
+    {% include breadcrumbs.html %}
   <div class="grid docs-content">
     <div class="col-2-12 sidebar">
-      <a href="/blog">&larr; back</a>
     </div>
     <div class="col-8-12">
         <div class="post-header">
@@ -16,7 +18,7 @@
         <div class="post-footer">
             To comment or leave feedback on this post, get in contact on
             <a href="https://twitter.com/NodeRED">Twitter</a>,
-            the <a href="https://groups.google.com/forum/#!forum/node-red">mailing list</a>
+            the <a href="https://discourse.nodered.org">forum</a>
             or join the conversation on <a href="/slack">Slack</a>.
         </div>
     </div>
@@ -27,9 +29,6 @@
         </a>
         <a class="fa fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://nodered.org{{ page.url }}"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-        </a>
-        <a class="fa fa-google-plus" href="https://plus.google.com/share?url=https://nodered.org{{ page.url }}"
-           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
         </a>
     </div>
   </div>

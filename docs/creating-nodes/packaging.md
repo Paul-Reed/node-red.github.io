@@ -1,7 +1,8 @@
 ---
-layout: docs
-toc: creating-nodes-toc.html
+layout: docs-creating-nodes
+toc: toc-creating-nodes.html
 title: Packaging
+slug: packaging
 ---
 
 Nodes can be packaged as modules and published to the npm repository. This makes
@@ -17,6 +18,10 @@ Here is a typical directory structure for a node package:
        |-sample.js
        \-icons
           \-sample.png
+          \-small.svg
+       \-examples
+          \-example 1.json
+          \-example 2.json
     - README.md
     - LICENSE
 
@@ -26,16 +31,16 @@ directory, or they could each be placed in their own sub-directory.
 
 ### Testing a node module locally
 
-To test a node module locally, the `npm link` command can be used. This allows you
-to develop the node in a local directory and have it linked into a local node-red
-install, as if it had been npm installed.
+To test a node module locally, the [`npm install <folder>`](https://docs.npmjs.com/cli/install) command can be used. This allows you
+to develop the node in a local directory and have it linked into a local node-red install during development.
 
-1. in the directory containing the node's `package.json` file, run: `sudo npm link`.
-2. in your node-red user directory, typically `~/.node-red` run: `npm link <name of node module>`.
+In your node-red user directory, typically `~/.node-red`, run:
 
-This creates the appropriate symbolic links between the two directories so Node-RED
+    npm install <path to location of node module>
+
+This creates the appropriate symbolic link to the directory so that Node-RED
 will discover the node when it starts. Any changes to the node's file can be picked
-up by simply restarting Node-RED.
+up by simply restarting Node-RED. 
 
 ### package.json
 
